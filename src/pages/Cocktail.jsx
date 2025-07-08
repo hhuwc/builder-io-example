@@ -1,18 +1,8 @@
-import { Link } from "react-router-dom";
 import "./Cocktail.css";
 
 function Cocktail() {
   return (
     <div className="cocktail-page">
-      <nav className="navigation">
-        <Link to="/" className="nav-link">
-          Home
-        </Link>
-        <Link to="/cocktail" className="nav-link active">
-          Cocktail
-        </Link>
-      </nav>
-
       <div className="cocktail-content">
         <h1>🍹 Cocktail Menu</h1>
         <p>Welcome to our cocktail collection!</p>
