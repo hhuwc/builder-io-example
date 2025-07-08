@@ -1,11 +1,18 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Cocktail from "./pages/Cocktail";
 import "./App.css";
 
 function App() {
   return (
-    <div className="app">
-      <h1>Hello World!</h1>
-      <p>The app is now running successfully on port 3000.</p>
-    </div>
+    <Router>
+      <div className="app">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cocktail" element={<Cocktail />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
